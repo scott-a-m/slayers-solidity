@@ -33,21 +33,3 @@ const runMain = async () => {
 };
 
 runMain();
-
-// const gameContract = await gameContractFactory.deploy(
-//     ["Ninja", "Swordsman", "Blade", "Quicksilver", "Slayer", "Mystique", "Slash"],       // Names
-//     ["https://cdn.pixabay.com/photo/2017/01/07/09/15/woman-1959982_1280.png", // Images
-//     "https://cdn.pixabay.com/photo/2015/10/22/14/29/man-1001285_1280.png",
-//     "https://cdn.pixabay.com/photo/2019/07/22/03/46/female-warrior-4354082_1280.png",
-//     "https://cdn.pixabay.com/photo/2018/02/21/05/47/warrior-woman-3169505_1280.png",
-//     "https://cdn.pixabay.com/photo/2019/01/31/01/29/fantasy-3965761_1280.png",
-//     "https://cdn.pixabay.com/photo/2017/10/13/23/57/warrior-woman-2849393_1280.png",
-//     "https://cdn.pixabay.com/photo/2017/01/26/01/03/viking-2009503_1280.png"
-// ],
-//     [400, 600, 450, 500, 450, 500, 525],                    // HP values
-//     [200, 100, 200, 150, 175, 225, 175],     // Attack damage values
-//     "Desolator",
-//     "https://cdn.pixabay.com/photo/2021/07/28/22/51/warrior-6504827_1280.png",
-//     15000,
-//     50                      
-// );

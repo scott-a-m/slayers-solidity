@@ -1,3 +1,5 @@
+// run this file for testing contract locally
+
 const main = async () => {
     const gameContractFactory = await hre.ethers.getContractFactory("Slayers");
     const gameContract = await gameContractFactory.deploy(
@@ -16,8 +18,6 @@ const main = async () => {
     await gameContract.deployed();
     console.log("Contract deployed to:", gameContract.address);
 
-    // mint NFT of character index 1 (Ryu)
-
     let txn = await gameContract.mintCharacterNFT(1);
     txn.wait();
     txn = await gameContract.checkIfUserHasNFT();
@@ -25,14 +25,7 @@ const main = async () => {
     txn.wait();
     txn = await gameContract.attackBoss();
     txn.wait();
-    txn = await gameContract.attackBoss();
-    txn.wait();
-    txn = await gameContract.attackBoss();
-    txn.wait();
-    txn = await gameContract.attackBoss();
-    txn.wait();
-    txn = await gameContract.attackBoss();
-    txn.wait();
+    
 
 
   
